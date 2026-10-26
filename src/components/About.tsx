@@ -62,22 +62,24 @@ export const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative mx-auto max-w-[380px]">
+            <div className="relative mx-auto max-w-[420px]">
               {/* Outer decorative gold ring offset */}
-              <div className="absolute -inset-3.5 rounded-[180px] border border-[#D1B477]/40 pointer-events-none" />
+              <div className="absolute -inset-3.5 rounded-[42px] border border-[#D1B477]/40 pointer-events-none" />
+              <div className="absolute -inset-6 rounded-[48px] border border-dashed border-[#D1B477]/20 pointer-events-none" />
+              
               <div className="absolute -bottom-6 -right-6 hidden sm:block opacity-40">
                 <BotanicalSprig className="w-20 h-32 text-muted-sage" />
               </div>
 
-              {/* Arch frame containing authentic portrait crop */}
-              <div className="relative rounded-[170px] overflow-hidden shadow-xl border-4 border-white bg-[#EAF2FC]">
+              {/* Portrait frame containing authentic second photo */}
+              <div className="relative rounded-[36px] overflow-hidden shadow-2xl border-4 border-white bg-[#FFF8EF]">
                 <img
-                  src="/assets/practitioner-portrait.jpg"
-                  alt="Jefrin"
-                  className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-103"
+                  src="/assets/practitioner-about.jpg"
+                  alt="Jefrin, Spiritual Healing Practitioner"
+                  className="w-full h-auto object-cover aspect-square transform transition-transform duration-700 hover:scale-103"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#EAF2FC]/40 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FFF8EF]/20 via-transparent to-transparent pointer-events-none" />
               </div>
 
               {/* Quote pill */}
