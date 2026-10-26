@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Wind, SunMedium, Compass, Eye, ArrowRight, X, CheckCircle2 } from 'lucide-react';
+import { Brain, Sparkles, Heart, Compass, Users, ArrowRight, X, CheckCircle2, Star } from 'lucide-react';
 import { LotusArt } from './DecorativeArt';
 
 export interface Offering {
@@ -24,89 +24,89 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
 
   const offerings: Offering[] = [
     {
-      id: 'spiritual-healing',
-      title: 'Spiritual Healing',
-      subtitle: 'Restoring Natural Soul Alignment',
+      id: 'inner-healing',
+      title: 'Inner Healing',
+      subtitle: 'Restoring Your Authentic Self',
       duration: '60 – 75 Minutes',
-      description: 'A serene one-on-one session holding space for emotional release, spiritual reconnection, and quiet restoration of inner harmony.',
+      description: 'Deep therapeutic work to gently heal inner wounds, release emotional blockages, and restore your authentic self.',
       details: [
-        'Gentle grounding opening and breath alignment',
-        'Intuitive energetic holding and stillness',
-        'Sound frequencies with singing bowls',
-        'Closing reflection and integration guidance',
+        'Healing core emotional patterns and childhood wounds',
+        'Releasing stored somatic tension and heavy blockages',
+        'Gentle guided dialogue and intuitive energy holding',
+        'Restoring heartfelt connection with your authentic essence',
       ],
-      intention: 'To gently dissolve accumulated emotional tension and invite deep, peaceful presence.',
-      icon: Sparkles,
+      intention: 'To heal underlying emotional pain and guide you home to your inherent wholeness.',
+      icon: Brain,
       accentBg: 'from-[#EAF2FC] via-[#FFF8EF] to-[#E5D7F4]',
     },
     {
-      id: 'guided-meditation',
-      title: 'Guided Meditation & Breathwork',
-      subtitle: 'Returning to the Quiet Center',
-      duration: '45 – 60 Minutes',
-      description: 'Personalized guided meditation sessions designed to soothe the nervous system, release mental chatter, and cultivate profound stillness.',
+      id: 'past-life-regression',
+      title: 'Past Life Regression Therapy',
+      subtitle: 'Karmic Insights & Soul Memory',
+      duration: '90 Minutes',
+      description: 'Explore past life experiences to understand current patterns, heal karmic wounds, and gain profound spiritual insights.',
       details: [
-        'Conscious diaphragmatic breathing exercises',
-        'Heart-centered visualization journeys',
-        'Techniques for everyday stress release',
-        'Audio reflection notes for ongoing personal practice',
+        'Gentle, conscious hypnotic relaxation into soul memory',
+        'Unraveling recurring relationship loops and phobias',
+        'Healing unresolved soul-level karmic agreements',
+        'Integrating deep spiritual revelations into your present life',
       ],
-      intention: 'To build a stable inner sanctuary you can return to at any moment in daily life.',
-      icon: Wind,
+      intention: 'To illuminate the soul’s journey across lifetimes and release recurring karmic weight.',
+      icon: Sparkles,
       accentBg: 'from-[#FFF8EF] via-[#F0EAF8] to-[#EAF2FC]',
     },
     {
-      id: 'chakra-balancing',
-      title: 'Chakra Balancing & Subtle Energy',
-      subtitle: 'Harmonizing Your Energetic Centers',
+      id: 'emotional-healing',
+      title: 'Emotional Healing',
+      subtitle: 'Cultivating Inner Peace & Coping Balance',
       duration: '60 Minutes',
-      description: 'A focused practice exploring your energetic subtle body to gently invite balance, fluid flow, and grounding vitality.',
+      description: 'Release emotional pain, develop healthy coping mechanisms, and cultivate inner peace and emotional balance.',
       details: [
-        'Intuitive subtle energy assessment',
-        'Focused resonance on the 7 core energy centers',
-        'Integration with rose quartz, amethyst & healing stones',
-        'Suggestions for maintaining energetic clarity',
+        'Safe nervous system discharge and emotional regulation',
+        'Releasing chronic anxiety, burnout, and grief',
+        'Personalized daily mindfulness and grounding rituals',
+        'Cultivating unwavering inner stability and self-compassion',
       ],
-      intention: 'To encourage harmonious, uninterrupted flow through your body’s spiritual energy centers.',
-      icon: SunMedium,
+      intention: 'To transform overwhelming emotions into grounded peace, clarity, and steady resilience.',
+      icon: Heart,
       accentBg: 'from-[#E5D7F4] via-[#FFF8EF] to-[#EAF2FC]',
     },
     {
-      id: 'mindfulness-awareness',
-      title: 'Mindfulness & Inner Awareness',
-      subtitle: 'Cultivating Conscious Presence',
-      duration: '50 Minutes',
-      description: 'Practical, contemplative spiritual tools to bring mindful awareness into relationships, decision-making, and daily routines.',
+      id: 'life-coaching',
+      title: 'Transformative Life Coaching',
+      subtitle: 'Overcoming Obstacles & Creating Your Life',
+      duration: '60 Minutes',
+      description: 'Transformative guidance to help you overcome obstacles, set meaningful goals, and create the life you desire.',
       details: [
-        'Observing thoughts without attachment or judgment',
-        'Cultivating compassionate self-talk',
-        'Embodied body-scan awareness',
-        'Gentle morning & evening grounding rituals',
+        'Identifying and dismantling limiting subconscious beliefs',
+        'Clarifying your authentic purpose, values, and vision',
+        'Actionable, compassionate step-by-step roadmaps',
+        'Ongoing empowerment, mindset shifts, and accountability',
       ],
-      intention: 'To transform daily overwhelm into grounded clarity and grateful awareness.',
-      icon: Eye,
+      intention: 'To empower you to unlock your inner strength and navigate life with clarity and confidence.',
+      icon: Compass,
       accentBg: 'from-[#F0EAF8] via-[#EAF2FC] to-[#FFF8EF]',
     },
     {
-      id: 'spiritual-guidance',
-      title: 'Personal Spiritual Guidance',
-      subtitle: 'Compassionate Mentorship for Your Path',
-      duration: '75 Minutes',
-      description: 'A deep, confidential listening container to explore life transitions, spiritual awakenings, purpose, and questions of the soul.',
+      id: 'transformative-workshops',
+      title: 'Workshops & Group Circles',
+      subtitle: 'Collective Healing & Practical Tools',
+      duration: 'Half-Day / Multi-Session',
+      description: 'Engaging, transformative workshops designed to teach practical tools you can use daily to manage stress, heal anxiety, and build community.',
       details: [
-        'Deep empathetic listening without judgment',
-        'Exploring life lessons and spiritual themes',
-        'Clarifying intuition vs. reactive fear',
-        'Crafting personal spiritual commitments',
+        'Experiential stress reduction and breathwork practices',
+        'Guided group meditation and subconscious healing exercises',
+        'Practical frameworks for emotional regulation in daily life',
+        'Safe community sharing with fellow conscious seekers',
       ],
-      intention: 'To receive heartfelt counsel and discover clarity on your individual journey forward.',
-      icon: Compass,
+      intention: 'To provide accessible, community-grounded tools for lasting everyday mental wellness.',
+      icon: Users,
       accentBg: 'from-[#FFF8EF] via-[#E9B9AC]/20 to-[#EAF2FC]',
     },
   ];
 
   return (
-    <section id="offerings" className="relative py-24 lg:py-32 bg-[#EAF2FC]/70 overflow-hidden">
+    <section id="services" className="relative py-24 lg:py-32 bg-[#EAF2FC]/70 overflow-hidden">
       {/* Ambient background glows */}
       <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-[#E5D7F4]/30 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-[#FFF8EF]/80 rounded-full blur-3xl pointer-events-none" />
@@ -118,14 +118,14 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white/70 border border-[#D1B477]/30 mb-4">
             <LotusArt className="w-4 h-4 text-champagne-gold" />
             <span className="text-[11px] font-semibold tracking-[0.25em] text-deep-blue-grey uppercase">
-              Intentional Practices
+              Comprehensive Care
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-deep-blue-grey mb-5">
-            Spiritual Offerings for <span className="italic">Body &amp; Soul</span>
+            Holistic Offerings for <span className="italic">Healing &amp; Transformation</span>
           </h2>
           <p className="text-base text-soft-slate font-light leading-relaxed">
-            Each offering is an invitation to slow down, soften, and reconnect with your inner light. These sessions can be experienced in-person or virtually.
+            Evidence-based techniques and spiritual depth blended seamlessly to support your journey towards healing, resilience, and inner well-being.
           </p>
         </div>
 
@@ -198,9 +198,9 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
                   <button
                     onClick={() => onSelectOfferingForContact(offering.title)}
                     type="button"
-                    className="text-[11px] font-medium text-soft-slate hover:text-deep-blue-grey underline decoration-[#D1B477]/40 underline-offset-4"
+                    className="text-[11px] font-semibold text-deep-blue-grey hover:text-[#D1B477] underline decoration-[#D1B477]/40 underline-offset-4"
                   >
-                    Inquire
+                    Book Session
                   </button>
                 </div>
               </motion.div>
@@ -208,13 +208,40 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
           })}
         </div>
 
+        {/* Impact Stats Banner directly from her authentic track record */}
+        <div className="max-w-4xl mx-auto mb-12 p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-[#D1B477]/35 shadow-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-[#D1B477]/20">
+            <div className="pt-4 sm:pt-0">
+              <p className="font-serif text-4xl sm:text-5xl font-normal text-deep-blue-grey">50+</p>
+              <p className="text-xs uppercase tracking-widest text-[#D1B477] font-semibold mt-1">
+                Happy Clients Guided
+              </p>
+            </div>
+            <div className="pt-4 sm:pt-0 sm:px-4">
+              <div className="flex items-center justify-center space-x-1">
+                <p className="font-serif text-4xl sm:text-5xl font-normal text-deep-blue-grey">4.9</p>
+                <Star className="w-5 h-5 text-champagne-gold fill-champagne-gold inline-block -mt-1" />
+              </div>
+              <p className="text-xs uppercase tracking-widest text-[#D1B477] font-semibold mt-1">
+                Average Client Rating
+              </p>
+            </div>
+            <div className="pt-4 sm:pt-0 sm:pl-4">
+              <p className="font-serif text-4xl sm:text-5xl font-normal text-deep-blue-grey">95%</p>
+              <p className="text-xs uppercase tracking-widest text-[#D1B477] font-semibold mt-1">
+                Transformation &amp; Success Rate
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Ethical / Medical Disclaimer Banner */}
         <div className="max-w-3xl mx-auto p-5 rounded-2xl bg-white/60 border border-[#D1B477]/25 text-center text-xs text-soft-slate leading-relaxed">
           <p className="font-medium text-deep-blue-grey mb-1">
-            Ethical Spiritual Practice Note
+            Ethical Practice Note
           </p>
           <p>
-            Spiritual healing and mindfulness practices are gentle modalities for personal reflection, relaxation, and inner harmony. They are complementary in nature and do not diagnose, treat, or replace professional medical or psychiatric care.
+            Coaching, regression therapy, and inner healing sessions are designed to empower personal insight, emotional release, and resilience. They work complementarily to promote well-being and do not replace psychiatric care or emergency medical intervention.
           </p>
         </div>
 
@@ -294,7 +321,7 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
                   type="button"
                   className="w-full sm:w-auto flex-1 inline-flex justify-center items-center space-x-2 px-6 py-3.5 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-deep-blue-grey hover:bg-[#253345] shadow-md transition-all"
                 >
-                  <span>Inquire About This Session</span>
+                  <span>Book This Session</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#D1B477]" />
                 </button>
 

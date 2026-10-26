@@ -4,7 +4,7 @@ import { sanctuaryAudio } from '../utils/sound';
 import { LotusArt } from './DecorativeArt';
 
 interface NavbarProps {
-  onOpenContact: () => void;
+  onOpenContact: (serviceName?: string) => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
@@ -23,10 +23,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Healing Journey', href: '#journey' },
-    { name: 'Offerings', href: '#offerings' },
+    { name: 'Services', href: '#services' },
+    { name: 'The Journey', href: '#journey' },
     { name: 'Sanctuary', href: '#sanctuary' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Stories', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-[#FFF8EF]/80 backdrop-blur-md shadow-ethereal py-3.5 border-b border-[#D1B477]/15'
+          ? 'bg-[#FFF8EF]/85 backdrop-blur-md shadow-ethereal py-3.5 border-b border-[#D1B477]/15'
           : 'bg-transparent py-5'
       }`}
     >
@@ -50,15 +50,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           href="#home"
           className="group flex items-center space-x-3 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold rounded-lg p-1"
         >
-          <div className="w-9 h-9 rounded-full bg-[#E5D7F4]/50 border border-[#D1B477]/30 flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+          <div className="w-10 h-10 rounded-full bg-[#E5D7F4]/50 border border-[#D1B477]/30 flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
             <LotusArt className="w-5 h-5 text-champagne-gold" />
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-2xl tracking-wide font-normal text-deep-blue-grey group-hover:text-[#263548] transition-colors">
-              Jefrin
+              Jefferin Sequeira
             </span>
-            <span className="text-[10px] tracking-[0.22em] uppercase text-soft-slate/80 font-medium -mt-1">
-              Spiritual Healing
+            <span className="text-[10px] tracking-[0.22em] uppercase text-soft-slate/85 font-medium -mt-1">
+              Heal Your Trauma
             </span>
           </div>
         </a>
@@ -97,14 +97,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             )}
           </button>
 
-          {/* Begin Journey CTA */}
-          <a
-            href="#journey"
-            className="group relative inline-flex items-center space-x-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase text-deep-blue-grey bg-gradient-to-r from-[#FFF8EF] via-[#F0EAF8] to-[#EAF2FC] border border-[#D1B477]/40 shadow-sm hover:shadow-glow-gold hover:border-[#D1B477] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+          {/* Book a Session CTA */}
+          <button
+            onClick={() => onOpenContact()}
+            type="button"
+            className="group relative inline-flex items-center space-x-2 px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase text-deep-blue-grey bg-gradient-to-r from-[#FFF8EF] via-[#F0EAF8] to-[#EAF2FC] border border-[#D1B477]/40 shadow-sm hover:shadow-glow-gold hover:border-[#D1B477] transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
           >
             <Sparkles className="w-3.5 h-3.5 text-champagne-gold transition-transform group-hover:rotate-12 duration-300" />
-            <span>Begin Your Journey</span>
-          </a>
+            <span>Book a Session</span>
+          </button>
         </div>
 
         {/* Mobile Hamburger & Audio */}
@@ -144,22 +145,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               </a>
             ))}
             <div className="pt-4 border-t border-[#D1B477]/20 flex flex-col space-y-3">
-              <a
-                href="#journey"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-deep-blue-grey bg-[#EAF2FC] border border-[#D1B477]/40 shadow-sm"
-              >
-                <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
-                <span>Begin Your Journey</span>
-              </a>
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   onOpenContact();
                 }}
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-deep-blue-grey shadow-md"
+                className="inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-deep-blue-grey shadow-md"
               >
-                Connect Directly
+                <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
+                <span>Book a Session</span>
               </button>
             </div>
           </nav>

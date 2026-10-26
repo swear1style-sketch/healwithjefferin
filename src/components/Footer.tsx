@@ -22,28 +22,28 @@ export const Footer: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-serif text-2xl font-normal text-deep-blue-grey leading-tight">
-                    Jefrin
+                    Jefferin Sequeira
                   </h3>
                   <p className="text-[10px] tracking-[0.25em] uppercase text-soft-slate">
-                    Spiritual Healing Practitioner
+                    Heal Your Trauma • Mental Wellness Coach
                   </p>
                 </div>
               </div>
 
               <p className="text-xs sm:text-sm text-soft-slate font-light leading-relaxed max-w-sm mb-6">
-                A gentle space to pause, reconnect with yourself, and explore a deeper sense of balance, awareness, and inner harmony.
+                Discover inner peace, resilience, and transformation with Jefferin. Empowering you to unlock your inner strength, release emotional wounds, and navigate life's challenges with confidence.
               </p>
             </div>
 
             <div className="text-xs text-soft-slate">
               <span className="font-medium text-deep-blue-grey block mb-1">
-                Direct Inquiries
+                Direct Inquiries &amp; Consultations
               </span>
               <p className="text-[#34455C]/90 font-mono text-[11px]">
-                contact@jefrinspiritualhealing.com
+                contact@healwithjefferin.in
               </p>
               <p className="text-[11px] text-soft-slate mt-0.5">
-                (Configurable practitioner contact email)
+                Replies within 24 hours
               </p>
             </div>
           </div>
@@ -61,17 +61,17 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#about" className="hover:text-deep-blue-grey transition-colors">
-                  About Jefrin
+                  Meet Jefferin Sequeira
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-deep-blue-grey transition-colors">
+                  Comprehensive Care
                 </a>
               </li>
               <li>
                 <a href="#journey" className="hover:text-deep-blue-grey transition-colors">
                   The Healing Journey
-                </a>
-              </li>
-              <li>
-                <a href="#offerings" className="hover:text-deep-blue-grey transition-colors">
-                  Spiritual Offerings
                 </a>
               </li>
               <li>
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#testimonials" className="hover:text-deep-blue-grey transition-colors">
-                  Client Reflections
+                  Voices of Transformation
                 </a>
               </li>
             </ul>
@@ -91,10 +91,10 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-4 flex flex-col justify-between">
             <div>
               <h4 className="text-xs font-semibold uppercase tracking-widest text-deep-blue-grey mb-4">
-                Sacred Sanctuary
+                Our Mission
               </h4>
               <p className="text-xs text-soft-slate leading-relaxed mb-4">
-                Every session is conducted with reverence, compassionate listening, and utmost respect for your individual spiritual journey. Available for both in-person quiet sessions and virtual distance consultations.
+                "To provide compassionate, evidence-based mental health and spiritual support that empowers individuals to heal from trauma, build resilience, and create meaningful, fulfilling lives."
               </p>
             </div>
 
@@ -113,13 +113,13 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar & Ethical Disclaimer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-soft-slate gap-4">
           <p>
-            © {new Date().getFullYear()} Jefrin. All rights reserved. A peaceful journey inward.
+            © {new Date().getFullYear()} Heal Your Trauma – Jefferin Sequeira. All rights reserved.
           </p>
 
           <div className="flex items-center space-x-1 text-[11px] text-soft-slate/80">
             <span>Crafted with</span>
             <Heart className="w-3 h-3 text-[#E9B9AC] fill-current" />
-            <span>for peace and inner harmony</span>
+            <span>for inner peace, healing &amp; lasting resilience</span>
           </div>
         </div>
 

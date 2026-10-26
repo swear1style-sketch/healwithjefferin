@@ -1,29 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Feather, Heart, Sun, Shield } from 'lucide-react';
+import { Sparkles, Heart, Sun, Shield, Quote } from 'lucide-react';
 import { BotanicalSprig } from './DecorativeArt';
 
 export const About: React.FC = () => {
   const pillars = [
     {
-      icon: Feather,
-      title: 'Gentle Presence',
-      description: 'Creating an unhurried, quiet space where you can let down inner armor and breathe freely.',
+      icon: Sparkles,
+      title: 'Inner Healing & Release',
+      description: 'Deep therapeutic work to gently heal inner wounds, release emotional blockages, and restore your authentic self.',
     },
     {
       icon: Heart,
-      title: 'Soul Compassion',
-      description: 'Meeting every thought, emotion, and life season with profound gentleness and non-judgment.',
+      title: 'Compassionate Container',
+      description: 'Creating an unhurried, safe, and nurturing space to explore difficult seasons without judgment or pressure.',
     },
     {
       icon: Sun,
-      title: 'Innate Wholeness',
-      description: 'Guiding you to remember that the peace you seek is not outside yourself, but waiting within.',
+      title: 'Resilience & Empowerment',
+      description: 'Unlocking your innate inner strength and providing practical, lifelong tools to navigate challenges with confidence.',
     },
     {
       icon: Shield,
-      title: 'Sacred Sanctuary',
-      description: 'An emotionally safe, grounded environment honoring your personal beliefs and inner timing.',
+      title: 'Holistic & Grounded',
+      description: 'Harmoniously blending evidence-based coaching methods with mindful spiritual depth and intuitive stillness.',
     },
   ];
 
@@ -40,14 +40,14 @@ export const About: React.FC = () => {
           <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-white/70 border border-[#D1B477]/30 mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D1B477]" />
             <span className="text-[11px] font-semibold tracking-[0.25em] text-deep-blue-grey uppercase">
-              About The Practitioner
+              Meet Your Guide to Healing
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-deep-blue-grey mb-5">
-            A Journey Toward <span className="italic">Inner Harmony</span>
+            Meet <span className="italic">Jefferin Sequeira</span>
           </h2>
           <p className="text-base text-soft-slate font-light leading-relaxed">
-            Spiritual healing is not about fixing what is broken; it is a gentle journey of remembering who you are beneath the noise of the world.
+            Compassionate expertise meets personalized care on your sacred journey to emotional freedom and inner wellness.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export const About: React.FC = () => {
               <div className="relative rounded-[36px] overflow-hidden shadow-2xl border-4 border-white bg-[#FFF8EF]">
                 <img
                   src="/assets/practitioner-about.jpg"
-                  alt="Jefrin, Spiritual Healing Practitioner smiling with meditation singing bowl, candles and healing crystals"
+                  alt="Jefferin Sequeira, Spiritual Healing Practitioner smiling with meditation singing bowl, candles and healing crystals"
                   width={1024}
                   height={1024}
                   className="w-full h-auto object-cover aspect-square transform transition-transform duration-700 hover:scale-103"
@@ -91,7 +91,7 @@ export const About: React.FC = () => {
                   “When we still the mind, the soul begins to whisper.”
                 </span>
                 <span className="text-xs uppercase tracking-widest text-[#D1B477] font-medium mt-1 block">
-                  — Jefrin
+                  — Jefferin Sequeira
                 </span>
               </div>
             </div>
@@ -105,37 +105,51 @@ export const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7 flex flex-col justify-center"
           >
-            <div className="prose prose-lg text-soft-slate font-light leading-relaxed mb-8">
-              <p className="text-lg text-deep-blue-grey font-serif leading-relaxed italic mb-4">
-                “Welcome to this quiet corner. Whether you are walking through a season of transition, feeling emotionally weary, or simply seeking a deeper connection with your true self, you are welcome here exactly as you are.”
+            <div className="space-y-4 text-soft-slate font-light leading-relaxed mb-6">
+              <p className="text-lg text-deep-blue-grey font-serif leading-relaxed italic">
+                “At Heal Your Trauma, we believe in empowering you to unlock your inner strength and navigate life's challenges with confidence. Our mission is to create a safe and nurturing space where you can explore, heal, and grow.”
               </p>
               
-              <p className="mb-4">
-                My work as a spiritual healing practitioner is rooted in compassion, stillness, and creating space. In our busy, demanding lives, it is easy to become disconnected from our heart and natural rhythm. When we pause, listen, and bring loving awareness to our inner world, natural healing and clarity emerge.
+              <p className="text-sm sm:text-base">
+                Jefferin is a compassionate and experienced mental health coach and inner healing guide dedicated to guiding individuals through their personal transformation. With a holistic approach, Jefferin combines evidence-based techniques with empathetic, heartfelt support to help clients overcome trauma, build resilience, and cultivate a life of purpose and joy.
               </p>
 
-              <p className="text-sm bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-[#D1B477]/25 text-deep-blue-grey/90">
-                <span className="font-semibold block mb-1 text-xs uppercase tracking-wider text-[#D1B477]">
-                  Practitioner Biography Placeholder
-                </span>
-                This space is thoughtfully reserved for your personal journey, background story, and specific spiritual practices. Your authentic voice and lived experience will shine here.
+              <p className="text-sm sm:text-base">
+                Whether you are seeking to untangle past experiences, heal karmic patterns through past life regression, or cultivate emotional equilibrium in daily life, each session is thoughtfully tailored to your unique journey and pacing.
               </p>
+
+              {/* Elevated Mission Quote Card */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-white/90 via-[#FFF8EF] to-[#EAF2FC]/70 border border-[#D1B477]/35 shadow-sm relative overflow-hidden mt-4">
+                <div className="flex items-start space-x-3">
+                  <div className="p-2 rounded-xl bg-[#E5D7F4]/50 text-champagne-gold shrink-0 mt-0.5">
+                    <Quote className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="font-serif italic text-sm sm:text-base text-deep-blue-grey leading-relaxed">
+                      "To provide compassionate, evidence-based mental health and spiritual support that empowers individuals to heal from trauma, build resilience, and create meaningful, fulfilling lives."
+                    </p>
+                    <p className="text-[11px] uppercase tracking-widest text-[#D1B477] font-semibold mt-2">
+                      — Our Guiding Mission
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* 4 Guiding Pillars */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
               {pillars.map((pillar) => {
                 const IconComponent = pillar.icon;
                 return (
                   <div
                     key={pillar.title}
-                    className="p-4 rounded-2xl bg-white/60 hover:bg-white border border-[#D1B477]/20 transition-all duration-300 shadow-sm hover:shadow-md group"
+                    className="p-4 rounded-2xl bg-white/70 hover:bg-white border border-[#D1B477]/25 transition-all duration-300 shadow-sm hover:shadow-md group"
                   >
-                    <div className="flex items-center space-x-3 mb-2">
+                    <div className="flex items-center space-x-3 mb-1.5">
                       <div className="w-8 h-8 rounded-lg bg-[#E5D7F4]/50 border border-[#D1B477]/30 flex items-center justify-center text-deep-blue-grey group-hover:scale-110 transition-transform">
                         <IconComponent className="w-4 h-4 text-[#D1B477]" />
                       </div>
-                      <h3 className="font-serif text-lg font-medium text-deep-blue-grey">
+                      <h3 className="font-serif text-base font-medium text-deep-blue-grey">
                         {pillar.title}
                       </h3>
                     </div>

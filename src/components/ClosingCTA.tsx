@@ -47,7 +47,7 @@ export const ClosingCTA: React.FC<ClosingCTAProps> = ({ onOpenContact }) => {
           </h2>
 
           <p className="text-base sm:text-lg text-soft-slate font-light max-w-xl mx-auto mb-10 leading-relaxed">
-            Take a breath, make a little space, and begin wherever you are. There is no rush—peace unfolds one gentle step at a time.
+            Ready to start your transformation? Take a breath, make a little space, and reach out to Jefferin. You will receive a caring, confidential response within 24 hours.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -57,7 +57,7 @@ export const ClosingCTA: React.FC<ClosingCTAProps> = ({ onOpenContact }) => {
               className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-gradient-to-r from-deep-blue-grey to-[#223142] hover:from-[#223142] hover:to-[#172330] shadow-lg hover:shadow-glow-soft transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
             >
               <Mail className="w-4 h-4 text-[#D1B477]" />
-              <span>Get in Touch</span>
+              <span>Book a Session</span>
               <ArrowUpRight className="w-4 h-4 text-[#D1B477]" />
             </button>
 

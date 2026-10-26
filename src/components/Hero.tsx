@@ -57,10 +57,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             className="lg:col-span-7 flex flex-col justify-center text-left"
           >
             {/* Eyebrow badge */}
-            <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-md border border-[#D1B477]/35 w-fit mb-6 shadow-sm">
+            <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-white/75 backdrop-blur-md border border-[#D1B477]/35 w-fit mb-6 shadow-sm">
               <LotusArt className="w-4 h-4 text-champagne-gold" />
               <span className="text-[11px] font-semibold tracking-[0.25em] text-deep-blue-grey uppercase">
-                Space For Your Soul
+                Heal Your Trauma • Space For Your Soul
               </span>
             </div>
 
@@ -72,27 +72,28 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               </span>
             </h1>
 
-            {/* Supporting paragraph */}
+            {/* Supporting paragraph incorporating authentic reference */}
             <p className="text-base sm:text-lg text-soft-slate max-w-xl font-light leading-relaxed mb-8">
-              A gentle space to pause, reconnect with yourself, and explore a deeper sense of balance, awareness, and inner harmony.
+              Discover inner peace, trauma healing, and emotional resilience with <strong className="font-medium text-deep-blue-grey">Jefferin Sequeira</strong>. A gentle, dedicated sanctuary to heal inner wounds, release emotional blockages, and restore your authentic self.
             </p>
 
             {/* Primary & Secondary Call to Actions */}
             <div className="flex flex-wrap items-center gap-4 sm:gap-5 mb-10">
-              <a
-                href="#journey"
-                className="group inline-flex items-center space-x-3 px-7 py-3.5 rounded-full text-sm font-medium tracking-wide text-white bg-gradient-to-r from-[#34455C] to-[#253345] hover:from-[#253345] hover:to-[#192433] shadow-md hover:shadow-glow-soft transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+              <button
+                onClick={onOpenContact}
+                type="button"
+                className="group inline-flex items-center space-x-3 px-8 py-3.5 rounded-full text-sm font-medium tracking-wide text-white bg-gradient-to-r from-[#34455C] to-[#253345] hover:from-[#253345] hover:to-[#192433] shadow-md hover:shadow-glow-soft transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Begin Your Journey</span>
+                <span>Book a Session</span>
                 <ArrowUpRight className="w-4 h-4 text-[#D1B477] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-300" />
-              </a>
+              </button>
 
               <a
-                href="#about"
+                href="#services"
                 className="inline-flex items-center space-x-2.5 px-6 py-3.5 rounded-full text-sm font-medium tracking-wide text-deep-blue-grey bg-[#FFF8EF]/80 hover:bg-[#FFF8EF] border border-[#D1B477]/40 shadow-sm hover:border-[#D1B477] transition-all duration-300"
               >
                 <Compass className="w-4 h-4 text-champagne-gold" />
-                <span>Discover My Approach</span>
+                <span>Explore Offerings</span>
               </a>
 
               <button
@@ -120,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               <span className="w-1 h-1 rounded-full bg-[#D1B477]/50 hidden sm:inline-block" />
 
               <span className="italic tracking-wide text-soft-slate/90">
-                A safe, non-judgmental sanctuary for your spirit
+                A safe, confidential container for your healing journey
               </span>
             </div>
           </motion.div>
@@ -146,7 +147,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               <div className="relative rounded-t-[220px] rounded-b-3xl overflow-hidden shadow-2xl border-2 border-white/80 bg-[#FFF8EF]/60">
                 <img
                   src="/assets/practitioner-main.jpg"
-                  alt="Jefrin - Spiritual Healing Practitioner holding space for inner peace, meditation and soul balance"
+                  alt="Jefferin Sequeira - Healing Guide and Transformation Coach"
                   width={1024}
                   height={682}
                   className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-102"
@@ -154,7 +155,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                   decoding="async"
                 />
 
-                {/* Soft gradient bottom blend so the image merges gently with the site aesthetic */}
+                {/* Soft gradient bottom blend */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#EAF2FC]/80 via-transparent to-transparent pointer-events-none" />
 
                 {/* Subtle light vignette */}
@@ -166,7 +167,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
-                className="absolute -bottom-5 -left-4 sm:-left-6 bg-white/90 backdrop-blur-md px-4 py-3 rounded-2xl border border-[#D1B477]/30 shadow-lg flex items-center space-x-3"
+                className="absolute -bottom-5 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl border border-[#D1B477]/30 shadow-lg flex items-center space-x-3"
               >
                 <div className="w-10 h-10 rounded-full bg-[#FFF8EF] border border-[#D1B477]/40 flex items-center justify-center text-champagne-gold">
                   <LotusArt className="w-5 h-5" />
@@ -176,7 +177,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                     Gentle Presence
                   </p>
                   <p className="text-[11px] text-soft-slate">
-                    Holding space for your awakening
+                    Holding space for your healing
                   </p>
                 </div>
               </motion.div>
@@ -186,11 +187,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 initial={{ opacity: 0, y: -15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.8 }}
-                className="absolute -top-3 -right-3 sm:-right-5 bg-white/90 backdrop-blur-md px-3.5 py-2 rounded-full border border-[#D1B477]/30 shadow-md flex items-center space-x-2"
+                className="absolute -top-3 -right-3 sm:-right-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-full border border-[#D1B477]/30 shadow-md flex items-center space-x-2"
               >
                 <span className="w-2 h-2 rounded-full bg-[#E9B9AC] animate-pulse" />
                 <span className="text-[11px] font-medium tracking-wide text-deep-blue-grey">
-                  Heart-Centered Stillness
+                  Heal Your Trauma
                 </span>
               </motion.div>
             </div>
