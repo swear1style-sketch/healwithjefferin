@@ -9,8 +9,10 @@ import { Testimonials } from './components/Testimonials';
 import { ClosingCTA } from './components/ClosingCTA';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { DesignerLoadingScreen } from './components/DesignerLoadingScreen';
 
 export const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [selectedOffering, setSelectedOffering] = useState('');
 
@@ -68,6 +70,11 @@ export const App: React.FC = () => {
         onClose={handleCloseContact}
         prefilledOffering={selectedOffering}
       />
+
+      {/* Atmospheric Positive Vibe Loading Screen */}
+      {isLoading && (
+        <DesignerLoadingScreen onComplete={() => setIsLoading(false)} />
+      )}
     </div>
   );
 };
