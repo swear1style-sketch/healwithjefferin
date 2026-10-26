@@ -167,16 +167,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
-                className="absolute -bottom-5 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl border border-[#D1B477]/30 shadow-lg flex items-center space-x-3"
+                className="absolute -bottom-4 left-2 sm:-bottom-5 sm:-left-6 bg-white/95 backdrop-blur-md px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl border border-[#D1B477]/30 shadow-lg flex items-center space-x-2.5 sm:space-x-3 z-10"
               >
-                <div className="w-10 h-10 rounded-full bg-[#FFF8EF] border border-[#D1B477]/40 flex items-center justify-center text-champagne-gold">
-                  <LotusArt className="w-5 h-5" />
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FFF8EF] border border-[#D1B477]/40 flex items-center justify-center text-champagne-gold shrink-0">
+                  <LotusArt className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
-                  <p className="font-serif text-sm font-semibold text-deep-blue-grey leading-tight">
+                  <p className="font-serif text-xs sm:text-sm font-semibold text-deep-blue-grey leading-tight">
                     Gentle Presence
                   </p>
-                  <p className="text-[11px] text-soft-slate">
+                  <p className="text-[10px] sm:text-[11px] text-soft-slate">
                     Holding space for your healing
                   </p>
                 </div>
@@ -187,10 +187,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 initial={{ opacity: 0, y: -15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.8 }}
-                className="absolute -top-3 -right-3 sm:-right-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-full border border-[#D1B477]/30 shadow-md flex items-center space-x-2"
+                className="absolute -top-3 right-2 sm:-right-5 bg-white/95 backdrop-blur-md px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full border border-[#D1B477]/30 shadow-md flex items-center space-x-2 z-10"
               >
                 <span className="w-2 h-2 rounded-full bg-[#E9B9AC] animate-pulse" />
-                <span className="text-[11px] font-medium tracking-wide text-deep-blue-grey">
+                <span className="text-[10px] sm:text-[11px] font-medium tracking-wide text-deep-blue-grey">
                   Heal Your Trauma
                 </span>
               </motion.div>
