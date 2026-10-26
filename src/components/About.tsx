@@ -75,9 +75,12 @@ export const About: React.FC = () => {
               <div className="relative rounded-[36px] overflow-hidden shadow-2xl border-4 border-white bg-[#FFF8EF]">
                 <img
                   src="/assets/practitioner-about.jpg"
-                  alt="Jefrin, Spiritual Healing Practitioner"
+                  alt="Jefrin, Spiritual Healing Practitioner smiling with meditation singing bowl, candles and healing crystals"
+                  width={1024}
+                  height={1024}
                   className="w-full h-auto object-cover aspect-square transform transition-transform duration-700 hover:scale-103"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#FFF8EF]/20 via-transparent to-transparent pointer-events-none" />
               </div>

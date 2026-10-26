@@ -146,9 +146,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               <div className="relative rounded-t-[220px] rounded-b-3xl overflow-hidden shadow-2xl border-2 border-white/80 bg-[#FFF8EF]/60">
                 <img
                   src="/assets/practitioner-main.jpg"
-                  alt="Jefrin, Spiritual Healing Practitioner"
+                  alt="Jefrin - Spiritual Healing Practitioner holding space for inner peace, meditation and soul balance"
+                  width={1024}
+                  height={682}
                   className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-102"
                   loading="eager"
+                  decoding="async"
                 />
 
                 {/* Soft gradient bottom blend so the image merges gently with the site aesthetic */}
