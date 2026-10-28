@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Sparkles, Heart, Compass, Users, ArrowRight, X, CheckCircle2 } from 'lucide-react';
-import { LotusArt } from './DecorativeArt';
+import { LotusArt, WhatsAppIcon } from './DecorativeArt';
+import { openWhatsApp } from '../utils/whatsapp';
 
 export interface Offering {
   id: string;
@@ -196,11 +197,12 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
                   </button>
 
                   <button
-                    onClick={() => onSelectOfferingForContact(offering.title)}
+                    onClick={() => openWhatsApp(offering.title)}
                     type="button"
-                    className="text-[11px] font-semibold text-deep-blue-grey hover:text-[#D1B477] underline decoration-[#D1B477]/40 underline-offset-4"
+                    className="inline-flex items-center space-x-1.5 text-[11px] font-semibold text-green-700 hover:text-green-800 underline decoration-green-600/40 underline-offset-4"
                   >
-                    Book Session
+                    <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                    <span>WhatsApp</span>
                   </button>
                 </div>
               </motion.div>
@@ -289,13 +291,15 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
                   onClick={() => {
                     const title = selectedOffering.title;
                     setSelectedOffering(null);
-                    onSelectOfferingForContact(title);
+                    if (onSelectOfferingForContact) onSelectOfferingForContact(title);
+                    openWhatsApp(title);
                   }}
                   type="button"
-                  className="w-full sm:w-auto flex-1 inline-flex justify-center items-center space-x-2 px-6 py-3.5 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-deep-blue-grey hover:bg-[#253345] shadow-md transition-all"
+                  className="w-full sm:w-auto flex-1 inline-flex justify-center items-center space-x-2 px-6 py-3.5 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-[#25D366] hover:bg-[#20ba59] shadow-md transition-all"
                 >
-                  <span>Book This Session</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#D1B477]" />
+                  <WhatsAppIcon className="w-4 h-4 text-white" />
+                  <span>Book on WhatsApp</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-white" />
                 </button>
 
                 <button

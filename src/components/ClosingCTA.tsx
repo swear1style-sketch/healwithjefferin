@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Mail, Sparkles } from 'lucide-react';
-import { LotusArt, SacredGeometryRing, BotanicalSprig } from './DecorativeArt';
+import { ArrowUpRight, Sparkles } from 'lucide-react';
+import { LotusArt, SacredGeometryRing, BotanicalSprig, WhatsAppIcon } from './DecorativeArt';
+import { PRACTITIONER_PHONE_DISPLAY, openWhatsApp } from '../utils/whatsapp';
 
 interface ClosingCTAProps {
   onOpenContact: () => void;
@@ -47,27 +48,28 @@ export const ClosingCTA: React.FC<ClosingCTAProps> = ({ onOpenContact }) => {
           </h2>
 
           <p className="text-base sm:text-lg text-soft-slate font-light max-w-xl mx-auto mb-10 leading-relaxed">
-            Ready to start your transformation? Take a breath, make a little space, and reach out to Jefferin. You will receive a caring, confidential response within 24 hours.
+            Ready to start your transformation? Take a breath, make a little space, and reach out to Jefferin directly on WhatsApp. You will receive a caring, personal response within 24 hours.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
-              onClick={onOpenContact}
+              onClick={() => openWhatsApp('General Inquiry & Booking')}
               type="button"
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-gradient-to-r from-deep-blue-grey to-[#223142] hover:from-[#223142] hover:to-[#172330] shadow-lg hover:shadow-glow-soft transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 px-8 py-4 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-[#25D366] hover:bg-[#20ba59] shadow-lg hover:shadow-glow-soft transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
             >
-              <Mail className="w-4 h-4 text-[#D1B477]" />
-              <span>Book a Session</span>
-              <ArrowUpRight className="w-4 h-4 text-[#D1B477]" />
+              <WhatsAppIcon className="w-4 h-4 text-white" />
+              <span>Chat on WhatsApp ({PRACTITIONER_PHONE_DISPLAY})</span>
+              <ArrowUpRight className="w-4 h-4 text-white" />
             </button>
 
-            <a
-              href="#sanctuary"
+            <button
+              onClick={onOpenContact}
+              type="button"
               className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-7 py-4 rounded-full text-xs font-semibold tracking-wider uppercase text-deep-blue-grey bg-[#FFF8EF] hover:bg-white border border-[#D1B477]/40 shadow-sm transition-all"
             >
               <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
-              <span>Pause in Stillness</span>
-            </a>
+              <span>Choose Session Type</span>
+            </button>
           </div>
 
           <p className="text-[11px] uppercase tracking-widest text-[#D1B477] font-medium mt-8">
@@ -78,3 +80,4 @@ export const ClosingCTA: React.FC<ClosingCTAProps> = ({ onOpenContact }) => {
     </section>
   );
 };
+

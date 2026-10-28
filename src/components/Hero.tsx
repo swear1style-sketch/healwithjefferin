@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Compass, Sparkles } from 'lucide-react';
-import { LotusArt, SacredGeometryRing, BotanicalSprig } from './DecorativeArt';
+import { LotusArt, SacredGeometryRing, BotanicalSprig, WhatsAppIcon } from './DecorativeArt';
 import { sanctuaryAudio } from '../utils/sound';
+import { openWhatsApp, PRACTITIONER_PHONE_DISPLAY } from '../utils/whatsapp';
 
 interface HeroProps {
   onOpenContact: () => void;
@@ -97,11 +98,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               </a>
 
               <button
-                onClick={onOpenContact}
+                onClick={() => openWhatsApp('General Inquiry & Transformation')}
                 type="button"
-                className="text-xs font-semibold uppercase tracking-wider text-soft-slate hover:text-deep-blue-grey underline decoration-[#D1B477]/50 underline-offset-4 py-2 px-1 transition-colors"
+                className="inline-flex items-center space-x-1.5 text-xs font-semibold tracking-wider uppercase text-green-700 hover:text-green-800 underline decoration-green-600/40 underline-offset-4 py-2 px-1 transition-colors"
+                title={`Chat directly on WhatsApp with Jefferin (${PRACTITIONER_PHONE_DISPLAY})`}
               >
-                Direct Inquiry
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                <span>WhatsApp: {PRACTITIONER_PHONE_DISPLAY}</span>
               </button>
             </div>
 

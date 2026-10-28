@@ -1,51 +1,62 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PauseCircle, Eye, Sparkles, Footprints } from 'lucide-react';
+import { Compass, Eye, Sparkles, PenTool, Heart } from 'lucide-react';
 import { LotusArt, SacredGeometryRing, BotanicalSprig } from './DecorativeArt';
 
 export const HealingJourney: React.FC = () => {
   const steps = [
     {
       num: '01',
-      icon: PauseCircle,
-      title: 'Pause & Reconnect',
-      subtitle: 'The Sacred Pause',
-      tagline: 'Slowing down to hear what is quiet within you',
+      icon: Compass,
+      title: 'Where Are You Currently in Your Life?',
+      subtitle: 'Understanding Your Present Ground',
+      tagline: 'Meeting yourself honestly in this season',
       narrative:
-        'Every true healing journey begins by stepping off the treadmill of daily demands. Here, there are no expectations, no performances, and no hurry. You are invited to arrive, take an unhurried breath, and simply notice how you are feeling in this moment.',
+        'Every transformation begins by acknowledging where you are currently in your life. Through a gentle process free from rush or expectation, we pause to take stock of your emotional state, life transitions, and what your heart is seeking in this chapter.',
       accentColor: 'border-[#D1B477]',
       bgGlow: 'from-[#FFF8EF] to-[#EAF2FC]',
     },
     {
       num: '02',
       icon: Eye,
-      title: 'Cultivate Awareness',
-      subtitle: 'Deep Inner Listening',
-      tagline: 'Meeting yourself with compassionate curiosity',
+      title: 'Self-Awareness',
+      subtitle: 'Awakening the Inner Witness',
+      tagline: 'Healing starts from self awareness',
       narrative:
-        'With calm guidance, we turn gentle attention inward. We notice physical tensions, quiet emotional undercurrents, and energetic blocks without trying to immediately force or change them. Healing begins when awareness meets acceptance.',
+        'Real healing starts from self awareness. When we quiet external demands and tune within, we learn to observe our emotional triggers, bodily sensations, and recurring patterns without judgment. Awareness illuminates the pathways that were previously hidden in reaction.',
       accentColor: 'border-[#E5D7F4]',
       bgGlow: 'from-[#EAF2FC] to-[#F0EAF8]',
     },
     {
       num: '03',
       icon: Sparkles,
-      title: 'Create Space for Reflection',
-      subtitle: 'Releasing What Weighs You Down',
-      tagline: 'Opening the heart to lightness and grace',
+      title: 'Self-Reflection',
+      subtitle: 'Tracing Your Past Roots',
+      tagline: 'Uncovering the roots of your emotional landscape',
       narrative:
-        'Through singing bowl resonance, subtle energetic balancing, and still meditation, we gently soften accumulated heaviness. Like clearing mist from a quiet pond, space opens for renewed clarity, intuition, and heartfelt peace.',
+        'In this contemplative space, we engage in gentle self-reflection to understand your past roots. We examine early childhood conditioning, inherited family narratives, and emotional imprints, giving voice to suppressed pain so it can finally soften and release.',
       accentColor: 'border-[#E9B9AC]',
       bgGlow: 'from-[#F0EAF8] to-[#FFF8EF]',
     },
     {
       num: '04',
-      icon: Footprints,
-      title: 'Explore Your Personal Journey',
-      subtitle: 'Embodied Walking Forward',
-      tagline: 'Carrying peace into the rhythm of your days',
+      icon: PenTool,
+      title: 'Rewriting Your Life Script',
+      subtitle: 'Reprogramming the Subconscious Mind',
+      tagline: 'Releasing outdated stories to author your true destiny',
       narrative:
-        'Spiritual awareness is not confined to the meditation cushion—it becomes a living sanctuary you carry into your relationships, your work, and your dreams. You leave grounded, centered, and rooted in your true self.',
+        'So much of our habitual struggle lives within the subconscious mind. By gently unwinding limiting beliefs and emotional baggage, we rewrite your life script—shifting from trauma-driven survival patterns into conscious self-authorship, joy, and empowerment.',
+      accentColor: 'border-[#D1B477]',
+      bgGlow: 'from-[#FFF8EF] to-[#E5D7F4]',
+    },
+    {
+      num: '05',
+      icon: Heart,
+      title: 'Build a Relationship With Yourself',
+      subtitle: 'Embodied Self-Compassion & Wholeness',
+      tagline: 'Becoming your own safest, loving sanctuary',
+      narrative:
+        'The sacred pinnacle of this journey is to build a relationship with yourself founded on tenderness, trust, and healthy boundaries. You emerge rooted in genuine self-love, navigating the world with inner resilience, emotional equilibrium, and lasting peace.',
       accentColor: 'border-[#B9CCBA]',
       bgGlow: 'from-[#FFF8EF] to-[#EAF2FC]',
     },
@@ -75,7 +86,7 @@ export const HealingJourney: React.FC = () => {
             The Healing <span className="italic">Journey</span>
           </h2>
           <p className="text-base text-soft-slate font-light leading-relaxed">
-            A flowing rhythm designed to accompany you from the noise of the external world back into the peace of your own center.
+            A 5-step flowing path designed to accompany you from the noise of the external world back into deep connection, awareness, and peace within yourself.
           </p>
         </div>
 
@@ -114,7 +125,7 @@ export const HealingJourney: React.FC = () => {
                         }`}
                       >
                         <span className="font-serif text-xs uppercase tracking-widest text-[#D1B477] font-semibold px-2.5 py-0.5 rounded-full bg-[#FFF8EF] border border-[#D1B477]/20">
-                          Phase {step.num}
+                          Step {step.num}
                         </span>
                         <span className="text-xs text-soft-slate tracking-wide">
                           {step.subtitle}

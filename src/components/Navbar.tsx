@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import { sanctuaryAudio } from '../utils/sound';
-import { LotusArt } from './DecorativeArt';
+import { LotusArt, WhatsAppIcon } from './DecorativeArt';
+import { openWhatsApp, PRACTITIONER_PHONE_DISPLAY } from '../utils/whatsapp';
 
 interface NavbarProps {
   onOpenContact: (serviceName?: string) => void;
@@ -148,12 +149,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  onOpenContact();
+                  openWhatsApp('Booking Inquiry from Mobile Menu');
                 }}
-                className="inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-deep-blue-grey shadow-md"
+                className="inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-white bg-[#25D366] hover:bg-[#20ba59] shadow-md"
               >
-                <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
-                <span>Book a Session</span>
+                <WhatsAppIcon className="w-4 h-4 text-white" />
+                <span>Chat on WhatsApp ({PRACTITIONER_PHONE_DISPLAY})</span>
               </button>
             </div>
           </nav>

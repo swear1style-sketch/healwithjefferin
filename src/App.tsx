@@ -10,6 +10,7 @@ import { ClosingCTA } from './components/ClosingCTA';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { DesignerLoadingScreen } from './components/DesignerLoadingScreen';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -63,6 +64,9 @@ export const App: React.FC = () => {
 
       {/* Footer */}
       <Footer />
+
+      {/* Floating 1-Click WhatsApp Button */}
+      <FloatingWhatsApp />
 
       {/* Real Functional Contact Flow Modal */}
       <ContactSection

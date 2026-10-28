@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUp, Heart } from 'lucide-react';
-import { LotusArt } from './DecorativeArt';
+import { LotusArt, WhatsAppIcon } from './DecorativeArt';
+import { PRACTITIONER_PHONE_DISPLAY, PRACTITIONER_PHONE_NUMBER } from '../utils/whatsapp';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -37,13 +38,19 @@ export const Footer: React.FC = () => {
 
             <div className="text-xs text-soft-slate">
               <span className="font-medium text-deep-blue-grey block mb-1">
-                Direct Inquiries &amp; Consultations
+                Direct WhatsApp Inquiries &amp; Consultations
               </span>
-              <p className="text-[#34455C]/90 font-mono text-[11px]">
-                contact@healwithjefferin.in
-              </p>
-              <p className="text-[11px] text-soft-slate mt-0.5">
-                Replies within 24 hours
+              <a
+                href={`https://wa.me/${PRACTITIONER_PHONE_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 text-green-700 hover:text-green-800 font-mono text-sm font-semibold transition-colors"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                <span>{PRACTITIONER_PHONE_DISPLAY}</span>
+              </a>
+              <p className="text-[11px] text-soft-slate mt-1">
+                Chat directly on WhatsApp • Typically replies within minutes
               </p>
             </div>
           </div>
