@@ -115,7 +115,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 <span className="w-7 h-7 rounded-full bg-[#E5D7F4]/60 border border-[#D1B477]/40 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
                 </span>
-                <span className="tracking-wide">Ring singing bowl chime</span>
+                <span className="tracking-wide">Ring 528 Hz singing bowl chime</span>
               </button>
 
               <span className="w-1 h-1 rounded-full bg-[#D1B477]/50 hidden sm:inline-block" />

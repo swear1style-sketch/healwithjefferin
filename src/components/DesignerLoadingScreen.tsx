@@ -83,7 +83,7 @@ export const DesignerLoadingScreen: React.FC<DesignerLoadingScreenProps> = ({ on
                 transition={{ duration: 1 }}
                 onClick={handlePlayChime}
                 className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white/90 backdrop-blur-md border border-[#D1B477]/40 shadow-glow-gold flex items-center justify-center cursor-pointer group"
-                title="Click for a gentle singing bowl chime"
+                title="Click for a gentle 528 Hz singing bowl chime"
               >
                 <LotusArt className="w-10 h-10 sm:w-12 sm:h-12 text-champagne-gold transform transition-transform group-hover:scale-110 duration-300" />
               </motion.div>

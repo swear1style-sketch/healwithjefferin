@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Brain, Sparkles, Heart, Compass, Users, ArrowRight, X, CheckCircle2, Star } from 'lucide-react';
+import { Brain, Sparkles, Heart, Compass, Users, ArrowRight, X, CheckCircle2 } from 'lucide-react';
 import { LotusArt } from './DecorativeArt';
 
 export interface Offering {
@@ -99,7 +99,7 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
         'Practical frameworks for emotional regulation in daily life',
         'Safe community sharing with fellow conscious seekers',
       ],
-      intention: 'To provide accessible, community-grounded tools for lasting everyday mental wellness.',
+      intention: 'To provide accessible, community-grounded tools for lasting everyday emotional wellness.',
       icon: Users,
       accentBg: 'from-[#FFF8EF] via-[#E9B9AC]/20 to-[#EAF2FC]',
     },
@@ -206,33 +206,6 @@ export const Offerings: React.FC<OfferingsProps> = ({ onSelectOfferingForContact
               </motion.div>
             );
           })}
-        </div>
-
-        {/* Impact Stats Banner directly from her authentic track record */}
-        <div className="max-w-4xl mx-auto mb-12 p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-[#D1B477]/35 shadow-sm">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-[#D1B477]/20">
-            <div className="pt-4 sm:pt-0">
-              <p className="font-serif text-4xl sm:text-5xl font-normal text-deep-blue-grey">50+</p>
-              <p className="text-xs uppercase tracking-widest text-[#D1B477] font-semibold mt-1">
-                Happy Clients Guided
-              </p>
-            </div>
-            <div className="pt-4 sm:pt-0 sm:px-4">
-              <div className="flex items-center justify-center space-x-1">
-                <p className="font-serif text-4xl sm:text-5xl font-normal text-deep-blue-grey">4.9</p>
-                <Star className="w-5 h-5 text-champagne-gold fill-champagne-gold inline-block -mt-1" />
-              </div>
-              <p className="text-xs uppercase tracking-widest text-[#D1B477] font-semibold mt-1">
-                Average Client Rating
-              </p>
-            </div>
-            <div className="pt-4 sm:pt-0 sm:pl-4">
-              <p className="font-serif text-4xl sm:text-5xl font-normal text-deep-blue-grey">95%</p>
-              <p className="text-xs uppercase tracking-widest text-[#D1B477] font-semibold mt-1">
-                Transformation &amp; Success Rate
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Ethical / Medical Disclaimer Banner */}

@@ -1,5 +1,6 @@
-// Gentle Web Audio API ambient singing bowl chime generator
-// No external audio files needed; completely self-contained and peaceful.
+// Gentle Web Audio API 528 Hz Solfeggio Meditation Tone & Singing Bowl Chime Generator
+// Tuned precisely to 528 Hz (The Solfeggio "Miracle / Love Frequency")
+// Completely self-contained, peaceful, and runs smoothly on all browsers.
 
 class SanctuaryAudio {
   private ctx: AudioContext | null = null;
@@ -17,15 +18,15 @@ class SanctuaryAudio {
     }
   }
 
-  // Play a soft singing bowl bell chime
+  // Play a soft singing bowl bell chime tuned to 528 Hz Solfeggio frequency
   public playChime() {
     try {
       this.initContext();
       if (!this.ctx) return;
 
       const now = this.ctx.currentTime;
-      // Frequencies for a calm Tibetan Singing Bowl harmonic (F# tuning ~ 369.99 Hz + harmonics)
-      const frequencies = [369.99, 740, 1110, 1480];
+      // 528 Hz Solfeggio miracle frequency and its acoustic harmonics
+      const frequencies = [528, 1056, 1584, 2112];
       const gains = [0.12, 0.04, 0.02, 0.01];
 
       frequencies.forEach((freq, idx) => {
@@ -39,20 +40,20 @@ class SanctuaryAudio {
         // Gentle envelope: soft attack, long decaying release
         gain.gain.setValueAtTime(0.0001, now);
         gain.gain.exponentialRampToValueAtTime(gains[idx], now + 0.08);
-        gain.gain.exponentialRampToValueAtTime(0.00001, now + 4.5);
+        gain.gain.exponentialRampToValueAtTime(0.00001, now + 4.8);
 
         osc.connect(gain);
         gain.connect(this.ctx.destination);
 
         osc.start(now);
-        osc.stop(now + 4.6);
+        osc.stop(now + 4.9);
       });
     } catch {
       // Audio playback gracefully suppressed if user hasn't interacted
     }
   }
 
-  // Toggle soft continuous meditative drone
+  // Toggle soft continuous 528 Hz Solfeggio meditative drone
   public toggleAmbient(onStateChange?: (playing: boolean) => void): boolean {
     try {
       this.initContext();
@@ -78,8 +79,13 @@ class SanctuaryAudio {
         this.masterGain.gain.exponentialRampToValueAtTime(0.035, now + 2.0);
         this.masterGain.connect(this.ctx.destination);
 
-        // Peaceful 432Hz ambient chord (Root, 5th, octave) with subtle LFO shimmer
-        const notes = [216, 324, 432, 648];
+        // Peaceful 528 Hz Solfeggio harmonic chord:
+        // 132 Hz (deep grounding sub-bass)
+        // 264 Hz (lower octave warmth)
+        // 528 Hz (fundamental Solfeggio Miracle Frequency)
+        // 792 Hz (harmonic 5th)
+        // 1056 Hz (gentle shimmering upper octave)
+        const notes = [132, 264, 528, 792, 1056];
         this.oscillators = notes.map((freq) => {
           const osc = this.ctx!.createOscillator();
           osc.type = 'sine';

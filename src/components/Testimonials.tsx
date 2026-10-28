@@ -29,7 +29,7 @@ export const Testimonials: React.FC = () => {
     {
       id: 3,
       quote:
-        '“I was hesitant at first, but working with Jefferin was the best decision I made for my mental well-being. Highly recommend!”',
+        '“I was hesitant at first, but working with Jefferin was the best decision I made for my emotional well-being. Highly recommend!”',
       author: 'Satisfied Client',
       context: 'Life Coaching & Healing Journey',
       location: 'Comprehensive Care',

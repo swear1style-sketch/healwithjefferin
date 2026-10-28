@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
                     Jefferin Sequeira
                   </h3>
                   <p className="text-[10px] tracking-[0.25em] uppercase text-soft-slate">
-                    Heal Your Trauma • Mental Wellness Coach
+                    Heal Your Trauma • Emotional Wellness Coach
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export const Footer: React.FC = () => {
                 Our Mission
               </h4>
               <p className="text-xs text-soft-slate leading-relaxed mb-4">
-                "To provide compassionate, evidence-based mental health and spiritual support that empowers individuals to heal from trauma, build resilience, and create meaningful, fulfilling lives."
+                "To provide compassionate, evidence-based emotional wellness and spiritual support that empowers individuals to heal from trauma, build resilience, and create meaningful, fulfilling lives."
               </p>
             </div>
 

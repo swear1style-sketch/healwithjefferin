@@ -111,7 +111,7 @@ export const About: React.FC = () => {
               </p>
               
               <p className="text-sm sm:text-base">
-                Jefferin is a compassionate and experienced mental health coach and inner healing guide dedicated to guiding individuals through their personal transformation. With a holistic approach, Jefferin combines evidence-based techniques with empathetic, heartfelt support to help clients overcome trauma, build resilience, and cultivate a life of purpose and joy.
+                Jefferin is a compassionate and experienced emotional wellness coach and inner healing guide dedicated to guiding individuals through their personal transformation. With a holistic approach, Jefferin combines evidence-based techniques with empathetic, heartfelt support to help clients overcome trauma, build resilience, and cultivate a life of purpose and joy.
               </p>
 
               <p className="text-sm sm:text-base">
@@ -126,7 +126,7 @@ export const About: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-serif italic text-sm sm:text-base text-deep-blue-grey leading-relaxed">
-                      "To provide compassionate, evidence-based mental health and spiritual support that empowers individuals to heal from trauma, build resilience, and create meaningful, fulfilling lives."
+                      "To provide compassionate, evidence-based emotional wellness and spiritual support that empowers individuals to heal from trauma, build resilience, and create meaningful, fulfilling lives."
                     </p>
                     <p className="text-[11px] uppercase tracking-widest text-[#D1B477] font-semibold mt-2">
                       — Our Guiding Mission

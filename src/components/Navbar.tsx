@@ -78,12 +78,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
 
         {/* Action Controls & CTA */}
         <div className="hidden lg:flex items-center space-x-4">
-          {/* Ambient Sound Toggle */}
+          {/* 528 Hz Ambient Sound Toggle */}
           <button
             onClick={handleAudioToggle}
             type="button"
-            title={isAudioActive ? "Pause Ambient Resonance" : "Play Gentle Ambient Resonance"}
-            aria-label={isAudioActive ? "Pause ambient sound" : "Play gentle ambient sound"}
+            title={isAudioActive ? "Pause 528 Hz Meditation Tone" : "Play 528 Hz Solfeggio Meditation Tone"}
+            aria-label={isAudioActive ? "Pause 528 Hz meditation tone" : "Play 528 Hz Solfeggio meditation tone"}
             className={`p-2.5 rounded-full border transition-all duration-300 flex items-center justify-center ${
               isAudioActive
                 ? 'bg-[#E5D7F4] border-[#D1B477] text-deep-blue-grey shadow-glow-soft animate-soft-pulse'
@@ -113,7 +113,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           <button
             onClick={handleAudioToggle}
             type="button"
-            aria-label="Toggle ambient sound"
+            aria-label="Toggle 528 Hz meditation tone"
             className="p-2 rounded-full border border-[#D1B477]/30 bg-white/70 text-soft-slate"
           >
             {isAudioActive ? <Volume2 className="w-4 h-4 text-champagne-gold" /> : <VolumeX className="w-4 h-4" />}

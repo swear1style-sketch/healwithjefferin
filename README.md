@@ -55,7 +55,7 @@ The website avoids clinical medical grids and stereotypical mystical cliches. It
    - Configurable email address placeholder in `src/components/ContactSection.tsx`.
 
 8. **Soundscape Resonance:**
-   - Built-in Web Audio API 432Hz ambient resonance toggle (no external audio files required, runs smoothly on any browser).
+   - Built-in Web Audio API 528Hz Solfeggio ambient resonance and singing bowl chime (no external audio files required, runs smoothly on any browser).
 
 ---
 
