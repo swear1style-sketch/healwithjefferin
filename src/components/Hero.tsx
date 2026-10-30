@@ -75,7 +75,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
             {/* Supporting paragraph incorporating authentic reference */}
             <p className="text-base sm:text-lg text-soft-slate max-w-xl font-light leading-relaxed mb-8">
-              Discover inner peace, trauma healing, and emotional resilience with <strong className="font-medium text-deep-blue-grey">Jefferin Sequeira</strong>. A gentle, dedicated sanctuary to heal inner wounds, release emotional blockages, and restore your authentic self.
+              Discover inner peace, trauma healing, and emotional resilience with <strong className="font-medium text-deep-blue-grey">Jefferin Sequeira</strong> — Psychologist, Clinical Hypnotherapist, and Emotional Wellness Coach. A gentle, dedicated sanctuary to heal inner wounds, release subconscious blockages, and restore your authentic self.
             </p>
 
             {/* Primary & Secondary Call to Actions */}

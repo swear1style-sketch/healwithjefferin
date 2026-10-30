@@ -26,13 +26,13 @@ export const Footer: React.FC = () => {
                     Jefferin Sequeira
                   </h3>
                   <p className="text-[10px] tracking-[0.25em] uppercase text-soft-slate">
-                    Heal Your Trauma • Emotional Wellness Coach
+                    Heal Your Trauma • Psychologist &amp; Emotional Wellness Coach
                   </p>
                 </div>
               </div>
 
               <p className="text-xs sm:text-sm text-soft-slate font-light leading-relaxed max-w-sm mb-6">
-                Discover inner peace, resilience, and transformation with Jefferin. Empowering you to unlock your inner strength, release emotional wounds, and navigate life's challenges with confidence.
+                Psychologist, Clinical Hypnotherapist, and Emotional Wellness Coach with 34 years of cross-cultural global experience. Empowering you to unlock your inner strength, release emotional wounds, and navigate life's challenges with confidence.
               </p>
             </div>
 
